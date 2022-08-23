@@ -1,0 +1,39 @@
+<!Doctype HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 id="title">Festival Buddy Finder</h1>
+  <p id="description">Please complete this form to join our matchmaking database for your future festival.</p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label">Name <input id="name" type="text" placeholder="Enter your first and last name" required></label>
+      <label id="email-label">Email <input id="email" type="email" placeholder="Enter a valid email" required></label>
+      <label id="age-label">Age <input id="number" type="number" min="18" max="99" placeholder="Enter your age"></label>
+      <label id="number-label">Phone number <input id="phone-num" type="tel" pattern="{10,}" placeholder="Enter your phone number"></label>
+      <label for="gender-label">I identify as a: </label>
+      <label id="gender-label"><input type="radio" name="gender" value="male"> Male</label>
+      <label id="gender-label"><input type="radio" name="gender" value="female"> Female</label>
+      <label id="gender-label"><input type="radio" name="gender" value="nonbinary"> Non-binary</label>
+      <label id="gender-label"><input type="radio" name="gender" value="other"> Other</label>
+      <label>Which festival are you going to? 
+        <select id="dropdown">
+          <option value="">Select one...</option>
+          <option value="edc-vegas">EDC: Las Vegas</option>
+          <option value="edc-orlando">EDC: Orlando</option>
+          <option value="nocturnal">Nocturnal Wonderland</option>
+          <option value="beyond">Beyond Wonderland</option>
+          <option value="countdown">Countdown</option>
+        </select>
+      </label>
+      <label>Provide a small bio: <textarea placeholder="What are you looking for in a match?"></textarea></label>
+      <label><input type="checkbox" value="confirm-age" required> By checking this box, I confirm I am at least 18 years of age</label>
+      <label><input type="checkbox" value="confirm-form" required> I understand that submitting this form does nothing</label>
+      <label><input type="submit" id="submit"></label>
+    </fieldset>
+  </form>
+</body>
+</html>
